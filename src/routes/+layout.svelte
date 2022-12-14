@@ -13,5 +13,7 @@
 		<Navbar />
 	</svelte:fragment>
 	<!-- Page Route Content -->
-	<slot />
+	<main class="lg:relative">
+		<slot />
+	</main>
 </AppShell>
