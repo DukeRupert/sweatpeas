@@ -14,7 +14,7 @@
 			class="flex justify-between items-center max-w-7xl mx-auto px-4 py-6 sm:px-6 md:justify-start md:space-x-10 lg:px-8"
 		>
 			<div class="flex justify-start lg:w-0 lg:flex-1">
-				<div class="flex justify-start lg:w-0 lg:flex-1">
+				<div class="flex justify-start items-center lg:w-0 lg:flex-1">
 					<a href="/">
 						<span class="sr-only">{COMPANY.logo.label}</span>
 						<img
@@ -25,6 +25,10 @@
 							height={COMPANY.logo.img.height}
 						/>
 					</a>
+					<div class="text-center">
+						<h1 class="ml-2 font-sans font-bold text-teal-400">Sweet Pea's</h1>
+						<h2 class="ml-2 font-serif text-xl text-sky-800">Cleaning Services</h2>
+					</div>
 				</div>
 			</div>
 			<div class="-mr-2 -my-2 md:hidden z-10">
@@ -55,7 +59,7 @@
 			</div>
 			<nav class="hidden md:flex space-x-10">
 				{#each LINKS as { href, label }}
-					<a {href} class="text-base md:text-lg font-medium text-gray-500 hover:text-gray-900">
+					<a {href} class="text-base md:text-lg !text-primary-700">
 						{label}
 					</a>
 				{/each}
@@ -63,7 +67,7 @@
 			<div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
 				<a
 					href={COMPANY.contact.phone.href}
-					class="ml-8 whitespace-nowrap inline-flex items-center justify-center bg-gradient-to-r from-actionorange-500 to-actionorange-500 bg-origin-border px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-black hover:text-cream-500 hover:from-actionorange-300 hover:to-actionorange-300"
+					class="ml-8 whitespace-nowrap inline-flex items-center justify-center bg-gradient-to-r from-teal-400 to-teal-500 bg-origin-border px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium !text-white hover:from-teal-300 hover:to-teal-500"
 				>
 					<svg class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 						<path
@@ -89,16 +93,20 @@
 			>
 				<div class="pt-5 pb-6 px-5">
 					<div class="flex items-center justify-between">
-						<div>
+						<div class="flex justify-start items-center lg:w-0 lg:flex-1">
 							<a href="/" on:click={() => ($mobileMenu = !$mobileMenu)}>
 								<img
-									class="h-16 w-auto p-1  bg-gradient-to-r from-evergreen-500 to-evergreen-500 rounded-md"
+									class="h-16 w-auto p-1 rounded-md"
 									src={COMPANY.logo.img.src}
 									alt={COMPANY.logo.img.alt}
 									width={COMPANY.logo.img.width}
 									height={COMPANY.logo.img.height}
 								/>
 							</a>
+							<div class="text-center">
+								<h1 class="ml-2 font-sans font-bold text-teal-400">Sweet Pea's</h1>
+								<h2 class="ml-2 font-serif text-xl text-sky-800">Cleaning Services</h2>
+							</div>
 						</div>
 						<div class="-mr-2">
 							<button
@@ -141,7 +149,7 @@
 					<div class="mt-6">
 						<a
 							href="/contact-us"
-							class="w-full flex items-center justify-center bg-gradient-to-r from-evergreen-500 to-evergreen-500 bg-origin-border px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-cream-500 hover:from-evergreen-600 hover:to-evergreen-600"
+							class="w-full whitespace-nowrap inline-flex items-center justify-center bg-gradient-to-r from-sky-400 to-sky-500 bg-origin-border px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium !text-white hover:from-sky-300 hover:to-sky-500"
 							on:click={() => ($mobileMenu = !$mobileMenu)}
 						>
 							<svg
@@ -165,14 +173,9 @@
 						<div class="mt-6">
 							<a
 								href={COMPANY.contact.phone.href}
-								class="w-full flex items-center justify-center text-center bg-actionorange-500 text-base font-medium text-black px-4 py-2 rounded-md"
+								class="w-full whitespace-nowrap inline-flex items-center justify-center bg-gradient-to-r from-teal-400 to-teal-500 bg-origin-border px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium !text-white hover:from-teal-300 hover:to-teal-500"
 							>
-								<svg
-									class="h-6 w-6 mr-2 text-black"
-									fill="none"
-									viewBox="0 0 24 24"
-									stroke="currentColor"
-								>
+								<svg class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 									<path
 										stroke-linecap="round"
 										stroke-linejoin="round"

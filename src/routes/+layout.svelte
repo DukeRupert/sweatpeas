@@ -1,5 +1,5 @@
 <script>
-	import '@skeletonlabs/skeleton/themes/theme-seafoam.css';
+	import '../theme.postcss';
 	import '@skeletonlabs/skeleton/styles/all.css';
 	import '../app.postcss';
 	import { AppShell, AppBar } from '@skeletonlabs/skeleton';

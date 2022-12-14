@@ -88,7 +88,8 @@ export const LINKS = [
 	{
 		label: 'Services',
 		href: '/services',
-		svg: wrench
+		svg: wrench,
+		subitems: []
 	},
 	{ label: 'About', href: '/about-us', svg: heart, subitems: [] },
 	{
