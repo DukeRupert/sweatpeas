@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { slide } from 'svelte/transition';
-	import { linear, quartOut } from 'svelte/easing';
+	import { quartOut } from 'svelte/easing';
 	import { createEventDispatcher } from 'svelte';
 	const dispatch = createEventDispatcher();
 
