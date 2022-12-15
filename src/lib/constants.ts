@@ -88,7 +88,7 @@ export const LINKS = [
 	{
 		label: 'Services',
 		href: '#services',
-		svg: wrench,
+		svg: heart,
 		subitems: []
 	},
 	{
