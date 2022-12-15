@@ -6,6 +6,7 @@
 	import Navbar from '$lib/components/Navbar/index.svelte';
 	import { navigating } from '$app/stores';
 	import { mobileMenu } from '$lib/stores';
+	import Footer from '$lib/components/Footer.svelte';
 
 	// Close mobile menu when navigating to a  new page
 	$: if ($navigating) {
@@ -20,4 +21,7 @@
 	</svelte:fragment>
 	<!-- Page Route Content -->
 	<slot />
+	<svelte:fragment slot="pageFooter">
+		<Footer />
+	</svelte:fragment>
 </AppShell>

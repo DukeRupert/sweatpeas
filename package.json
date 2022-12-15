@@ -38,6 +38,8 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@square/svelte-store": "^1.0.11"
+		"@felte/reporter-svelte": "^1.1.4",
+		"@square/svelte-store": "^1.0.11",
+		"felte": "^1.2.6"
 	}
 }

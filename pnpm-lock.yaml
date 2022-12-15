@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@felte/reporter-svelte': ^1.1.4
   '@skeletonlabs/skeleton': ^0.80.8
   '@square/svelte-store': ^1.0.11
   '@sveltejs/adapter-auto': 1.0.0-next.91
@@ -14,6 +15,7 @@ specifiers:
   eslint: ^8.29.0
   eslint-config-prettier: ^8.5.0
   eslint-plugin-svelte3: ^4.0.0
+  felte: ^1.2.6
   postcss: ^8.4.20
   prettier: ^2.8.1
   prettier-plugin-svelte: ^2.9.0
@@ -27,7 +29,9 @@ specifiers:
   vite: ^4.0.1
 
 dependencies:
+  '@felte/reporter-svelte': 1.1.4_svelte@3.55.0
   '@square/svelte-store': 1.0.11
+  felte: 1.2.6_svelte@3.55.0
 
 devDependencies:
   '@skeletonlabs/skeleton': 0.80.8
@@ -270,6 +274,28 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
+
+  /@felte/common/1.1.3:
+    resolution: {integrity: sha512-47OJYohloUT9FOgXRxEIaSkaveDB70/eRv3+6MfYDZbc44XfojHJLiUOz3uSWRwfl8f2wonhkhIPCYkzIUltTg==}
+    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
+    dev: false
+
+  /@felte/core/1.3.6:
+    resolution: {integrity: sha512-/V1WG+YTz7gfbvQYeBazMSgaCA5qnNRJy+HP6jtdvi2f5Xm/iwVxZXoZZU5/Da5CmT0rYdkCDcHQe9IG0iTV1Q==}
+    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
+    dependencies:
+      '@felte/common': 1.1.3
+    dev: false
+
+  /@felte/reporter-svelte/1.1.4_svelte@3.55.0:
+    resolution: {integrity: sha512-42CMqNYU4dnHJW0SwJSc2PUa6T7oN7V/V4euMAZnGK5Blz3jkYb/oXPdURZkbXkIUxWGip2cnFUroqT+HO79SA==}
+    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
+    peerDependencies:
+      svelte: ^3.31.0
+    dependencies:
+      '@felte/common': 1.1.3
+      svelte: 3.55.0
+    dev: false
 
   /@humanwhocodes/config-array/0.11.7:
     resolution: {integrity: sha512-kBbPWzN8oVMLb0hOUYXhmxggL/1cJE6ydvjDIGi9EnAGUyA7cLVKQg+d/Dsm+KZwx2czGHrCmMVLiyg8s5JPKw==}
@@ -1078,6 +1104,16 @@ packages:
     dependencies:
       reusify: 1.0.4
     dev: true
+
+  /felte/1.2.6_svelte@3.55.0:
+    resolution: {integrity: sha512-0dcDPVkA09vkXFm+hiOFanWGGH1hwjqWDul02nRVjkMe4dtf6FxtyV8JSFY2Rxcq7rCoaYkn1Dv8oeRDRdVPsw==}
+    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
+    peerDependencies:
+      svelte: ^3.31.0
+    dependencies:
+      '@felte/core': 1.3.6
+      svelte: 3.55.0
+    dev: false
 
   /file-entry-cache/6.0.1:
     resolution: {integrity: sha512-7Gps/XWymbLk2QLYK4NzpMOrYjMhdIxXuIvy2QBsLE6ljuodKvdkWs/cpyJJ3CVIVpH0Oi1Hvg1ovbMzLdFBBg==}
