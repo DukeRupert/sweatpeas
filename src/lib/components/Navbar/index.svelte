@@ -84,9 +84,9 @@
 		</div>
 
 		<div
-			class="absolute top-0 inset-x-0 p-2 transition transform origin-top-left md:hidden  scale-95 {$mobileMenu
-				? 'z-30 duration-200 ease-out opacity-100 scale-100'
-				: '-z-10 duration-100 ease-in opacity-0 scale-95'}"
+			class="absolute top-0 inset-x-0 p-2 transition transform origin-top-left md:hidden z-30 {$mobileMenu
+				? 'translate-x-0 duration-200 quint-out opacity-100'
+				: 'translate-x-full duration-200 quint-in opacity-0'}"
 		>
 			<div
 				class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50"
