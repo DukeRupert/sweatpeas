@@ -29,42 +29,33 @@
 							<span
 								class="h-12 w-12 rounded-md flex items-center justify-center bg-gradient-to-r from-evergreen-500 to-evergreen-500"
 							>
-								<!-- Icon: Ruler/Pencil -->
+								<!-- Icon: Heart -->
 								<svg
-									class="h-6 w-6 text-cream-500"
-									width="24"
-									height="24"
+									class="h-8 w-8 text-tertiary-400"
 									viewBox="0 0 24 24"
-									stroke-width="2"
-									stroke="currentColor"
 									fill="none"
+									stroke="currentColor"
+									stroke-width="2"
 									stroke-linecap="round"
 									stroke-linejoin="round"
 								>
-									<path stroke="none" d="M0 0h24v24H0z" />
-									<path d="M3 21h4l13 -13a1.5 1.5 0 0 0 -4 -4l-13 13v4" />
-									<line x1="14.5" y1="5.5" x2="18.5" y2="9.5" />
-									<polyline points="12 8 7 3 3 7 8 12" /> <line x1="7" y1="8" x2="5.5" y2="9.5" />
-									<polyline points="16 12 21 17 17 21 12 16" />
-									<line x1="16" y1="17" x2="14.5" y2="18.5" /></svg
+									<path
+										d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+									/></svg
 								>
 							</span>
 						</div>
 						<div class="mt-6">
 							<h2 class="text-4xl font-extrabold tracking-tight text-gray-900">
-								Don’t worry, we’ll take care of your mess
+								Don’t stress, we’ll take care of your mess
 							</h2>
 							<p class="mt-4 text-lg text-gray-500">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam molestie massa
-								erat, sit amet faucibus felis auctor ut. Nulla magna ante, eleifend at egestas at,
-								finibus non mauris. Aliquam vestibulum dolor at augue pretium blandit. Pellentesque
-								at augue tellus. Quisque venenatis feugiat tortor, ut vulputate eros posuere sit
-								amet. Praesent eu sem eu tellus vulputate efficitur. Maecenas et lectus convallis,
-								pellentesque leo in, tincidunt odio. Morbi congue lacinia consequat.
+								Whether it is a weekly clean which is tailored to your needs or a one-off, intense
+								cleaning of your home we can can make your dirty problems go away.
 							</p>
 							<div class="mt-6">
 								<a
-									href="/"
+									href="/#services"
 									class="inline-flex bg-accent-500 px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm !text-white hover:bg-accent-600"
 								>
 									Learn More
@@ -76,15 +67,13 @@
 						<blockquote>
 							<div>
 								<p class="text-base text-gray-500">
-									&ldquo;We had a great experience in working with Frank. He never cut any corners
-									but was always mindful of costs so as not to exceed our budget.&rdquo;
+									&ldquo;We have had a great experience when working with Sweat Pea's. Patricia is
+									always professional, fast and leaves our home feeling fantastic!&rdquo;
 								</p>
 							</div>
 							<footer class="mt-3">
 								<div class="flex items-center space-x-3">
-									<div class="text-base font-medium text-gray-700">
-										Demetrius S. - Bonney Lake, WA
-									</div>
+									<div class="text-base font-medium text-gray-700">Chante W. - Helena, MT</div>
 								</div>
 							</footer>
 						</blockquote>
@@ -96,7 +85,7 @@
 					>
 						<img
 							class="w-full sm:max-w-md rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:left-0 lg:h-full lg:w-auto lg:max-w-none"
-							src="pink_woman_cleaning_crying.jpeg"
+							src="pink_woman_cleaning_crying.webp"
 							alt="A woman wearing rubber gloves and holding a sponge is dirty and crying."
 							height="600"
 							width="900"
@@ -123,39 +112,36 @@
 							<span
 								class="h-12 w-12 rounded-md flex items-center justify-center bg-gradient-to-r from-evergreen-500 to-evergreen-500"
 							>
-								<!-- Heroicon name: outline/sparkles -->
+								<!-- Icon: Happy Face -->
 								<svg
-									class="h-6 w-6 text-cream-500"
-									viewBox="0 0 24 24"
-									width="24"
-									height="24"
-									xmlns="http://www.w3.org/2000/svg"
+									class="h-8 w-8 text-primary-400"
 									fill="none"
+									viewBox="0 0 24 24"
 									stroke="currentColor"
-									stroke-width="2"
-									stroke-linecap="round"
-									stroke-linejoin="round"
 								>
-									<circle cx="12" cy="12" r="10" /> <path d="M8 14s1.5 2 4 2 4-2 4-2" />
-									<line x1="9" y1="9" x2="9.01" y2="9" />
-									<line x1="15" y1="9" x2="15.01" y2="9" /></svg
-								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+									/>
+								</svg>
 							</span>
 						</div>
 
 						<div class="mt-6">
-							<h2 class="text-3xl font-bold tracking-tight text-gray-900">Precision + Integrity</h2>
+							<h2 class="text-4xl font-bold tracking-tight text-gray-900">
+								Professional cleaning with a personal touch
+							</h2>
 							<p class="mt-4 text-lg text-gray-500">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam molestie massa
-								erat, sit amet faucibus felis auctor ut. Nulla magna ante, eleifend at egestas at,
-								finibus non mauris. Aliquam vestibulum dolor at augue pretium blandit. Pellentesque
-								at augue tellus. Quisque venenatis feugiat tortor, ut vulputate eros posuere sit
-								amet. Praesent eu sem eu tellus vulputate efficitur. Maecenas et lectus convallis,
-								pellentesque leo in, tincidunt odio. Morbi congue lacinia consequat.
+								The ironing basket is overflowing, the living room looks like a bomb has hit it, the
+								kitchen is a disaster area and the bathroom, and well best not say anything about
+								it. But that's where our professional team of experienced cleaners come in to
+								transform your home back.
 							</p>
 							<div class="mt-6">
 								<a
-									href="/"
+									href="#contact-us"
 									class="inline-flex bg-white px-4 py-2 border border-transparent text-base font-medium rounded-md shadow-sm text-primary-600 hover:bg-gray-50"
 								>
 									Contact Us
@@ -170,7 +156,7 @@
 					>
 						<img
 							class="w-full sm:max-w-md rounded-xl shadow-xl ring-1 ring-black ring-opacity-5 lg:absolute lg:right-0 lg:h-full lg:w-auto lg:max-w-none"
-							src="teal_woman_cleaning_bucket.jpeg"
+							src="teal_woman_cleaning_bucket.webp"
 							alt="Excavation and leveling using a compact excavator on a residential property"
 							height="600"
 							width="900"

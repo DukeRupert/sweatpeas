@@ -55,7 +55,7 @@ export const COMPANY: Company = {
 		label: "Sweat Pea's",
 		href: '/',
 		img: {
-			src: 'woman_winking.jpeg',
+			src: 'woman_winking.webp',
 			alt: 'A portrait of a retro woman winking',
 			height: '300',
 			width: '300'
@@ -91,7 +91,6 @@ export const LINKS = [
 		svg: wrench,
 		subitems: []
 	},
-	{ label: 'About', href: '/about-us', svg: heart, subitems: [] },
 	{
 		label: 'Contact',
 		href: '/contact-us',
