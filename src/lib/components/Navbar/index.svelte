@@ -27,7 +27,7 @@
 					</a>
 					<div class="text-center">
 						<h1 class="ml-2 font-sans font-bold text-teal-400">Sweet Pea's</h1>
-						<h2 class="ml-2 font-serif text-xl text-sky-800">Cleaning Services</h2>
+						<h2 class="ml-2 font-serif text-xl text-primary-800">Cleaning Services</h2>
 					</div>
 				</div>
 			</div>
@@ -59,7 +59,7 @@
 			</div>
 			<nav class="hidden md:flex space-x-10">
 				{#each LINKS as { href, label }}
-					<a {href} class="text-base md:text-lg !text-primary-700">
+					<a {href} class="text-base md:text-lg text-primary-800 ">
 						{label}
 					</a>
 				{/each}
@@ -67,7 +67,7 @@
 			<div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
 				<a
 					href={COMPANY.contact.phone.href}
-					class="ml-8 whitespace-nowrap inline-flex items-center justify-center bg-gradient-to-r from-teal-400 to-teal-500 bg-origin-border px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium !text-white hover:from-teal-300 hover:to-teal-500"
+					class="ml-8 whitespace-nowrap inline-flex items-center justify-center bg-gradient-to-r from-accent-400 to-accent-500 bg-origin-border px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium !text-white hover:from-accent-300 hover:to-accent-500"
 				>
 					<svg class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 						<path
@@ -104,8 +104,8 @@
 								/>
 							</a>
 							<div class="text-center">
-								<h1 class="ml-2 font-sans font-bold text-teal-400">Sweet Pea's</h1>
-								<h2 class="ml-2 font-serif text-xl text-sky-800">Cleaning Services</h2>
+								<h1 class="ml-2 font-sans font-bold text-accent-400">Sweet Pea's</h1>
+								<h2 class="ml-2 font-serif text-xl text-primary-800">Cleaning Services</h2>
 							</div>
 						</div>
 						<div class="-mr-2">
@@ -149,7 +149,7 @@
 					<div class="mt-6">
 						<a
 							href="/contact-us"
-							class="w-full whitespace-nowrap inline-flex items-center justify-center bg-gradient-to-r from-sky-400 to-sky-500 bg-origin-border px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium !text-white hover:from-sky-300 hover:to-sky-500"
+							class="w-full whitespace-nowrap inline-flex items-center justify-center bg-gradient-to-r from-primary-400 to-primary-500 bg-origin-border px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium !text-white hover:from-sky-300 hover:to-sky-500"
 							on:click={() => ($mobileMenu = !$mobileMenu)}
 						>
 							<svg
@@ -173,7 +173,7 @@
 						<div class="mt-6">
 							<a
 								href={COMPANY.contact.phone.href}
-								class="w-full whitespace-nowrap inline-flex items-center justify-center bg-gradient-to-r from-teal-400 to-teal-500 bg-origin-border px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium !text-white hover:from-teal-300 hover:to-teal-500"
+								class="w-full whitespace-nowrap inline-flex items-center justify-center bg-gradient-to-r from-accent-400 to-accent-500 bg-origin-border px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium !text-white hover:from-accent-300 hover:to-accent-500"
 							>
 								<svg class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 									<path
