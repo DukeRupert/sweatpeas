@@ -1,18 +1,23 @@
 <script>
-	import '../theme.postcss';
 	import '@skeletonlabs/skeleton/styles/all.css';
+	import '../theme.postcss';
 	import '../app.postcss';
-	import { AppShell, AppBar } from '@skeletonlabs/skeleton';
+	import { AppShell } from '@skeletonlabs/skeleton';
 	import Navbar from '$lib/components/Navbar/index.svelte';
+	import { navigating } from '$app/stores';
+	import { mobileMenu } from '$lib/stores';
+
+	// Close mobile menu when navigating to a  new page
+	$: if ($navigating) {
+		$mobileMenu = false;
+	}
 </script>
 
 <!-- App Shell -->
 <AppShell slotSidebarLeft="bg-surface-500/5 w-56 p-4">
 	<svelte:fragment slot="header">
-		<!-- App Bar -->
 		<Navbar />
 	</svelte:fragment>
 	<!-- Page Route Content -->
-
 	<slot />
 </AppShell>
