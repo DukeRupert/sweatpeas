@@ -52,7 +52,7 @@ interface Company {
 export const COMPANY: Company = {
 	name: "Sweat Pea's",
 	logo: {
-		label: "Sweat Pea's",
+		label: "Sweat Pea's Cleaning Services",
 		href: '/',
 		img: {
 			src: 'woman_winking.webp',
