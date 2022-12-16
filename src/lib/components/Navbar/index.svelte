@@ -4,8 +4,19 @@
 	import SocialMedia from '$lib/components/SocialMedia.svelte';
 	import { LINKS, COMPANY } from '$lib/constants';
 	import { mobileMenu } from '$lib/stores';
+	import { onMount } from 'svelte';
 	let pathname;
 	$: ({ pathname } = $page.url);
+
+	const closeMobileMenu = () => {
+		$mobileMenu = false;
+	};
+
+	onMount(() => {
+		window.addEventListener('hashchange', (event) => {
+			closeMobileMenu();
+		});
+	});
 </script>
 
 <header>
@@ -59,7 +70,7 @@
 			</div>
 			<nav class="hidden md:flex space-x-10">
 				{#each LINKS as { href, label }}
-					<a {href} class="text-base md:text-lg text-primary-800 ">
+					<a on:click={closeMobileMenu} {href} class="text-base md:text-lg text-primary-800 ">
 						{label}
 					</a>
 				{/each}
