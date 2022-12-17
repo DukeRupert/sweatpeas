@@ -61,15 +61,11 @@
 			) {
 				errors.phone = 'Must be a valid phone number';
 			}
-			if (!values.location) {
-				errors.location = 'Must not be empty';
-			}
-			if (!/^[a-zA-Z\s]*$/.test(values.location)) {
-				errors.location = 'Only letters allowed';
-			}
+
 			return errors;
 		},
 		onSubmit: async (values) => {
+			console.log('Submitting');
 			pending = true;
 			const response = await fetch('/api/contact-us', {
 				method: 'POST',
@@ -86,6 +82,9 @@
 
 			goto('/success');
 		},
+		onError: (errors) => {
+			window.alert(errors);
+		},
 
 		extend: reporter
 	});
@@ -96,7 +95,7 @@
 	});
 </script>
 
-<form use:form action="/api/contact-us" method="POST" class="space-y-8 divide-y divide-gray-200">
+<form use:form class="space-y-8 divide-y divide-gray-200">
 	<div class="space-y-8 divide-y divide-gray-200">
 		<div>
 			<!-- Service -->

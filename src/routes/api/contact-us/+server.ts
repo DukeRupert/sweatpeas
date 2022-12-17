@@ -1,8 +1,10 @@
 import type { RequestHandler } from './$types';
 import client from '$lib/postmark';
+import { COMPANY } from '$lib/constants';
 
 // Send an email:
 export const POST: RequestHandler = async ({ request }) => {
+	console.log('sending message');
 	const body = await request.json();
 
 	// Add date
@@ -25,7 +27,7 @@ export const POST: RequestHandler = async ({ request }) => {
 			TemplateId: 30129375,
 			TemplateModel: data,
 			From: 'logan@firefly.llc',
-			To: 'logan@firefly.llc',
+			To: COMPANY.contact.email,
 			MessageStream: 'outbound',
 			TrackOpens: true
 		});
